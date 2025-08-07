@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f5f5;
+  background-color: #f0f4f0; /* Tom de verde bem claro para o fundo */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -26,12 +26,15 @@ body {
 }
 
 .chatbot-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-color: #2D572C;
+  background-image: url('logo_biodinamica.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* ALTERAÇÃO AQUI: O logo agora fica no topo do cabeçalho */
+  background-position: top center;
   color: white;
-  padding: 20px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 600;
+  padding: 10px 20px; /* Padding ajustado para melhor alinhamento no topo */
+  height: 75px; /* Altura ajustada para o logo */
 }
 
 .chatbot-messages {
@@ -53,7 +56,7 @@ body {
 }
 
 .message.user {
-  background: #667eea;
+  background: #2E7D32;
   color: white;
   align-self: flex-end;
   border-bottom-right-radius: 5px;
@@ -95,12 +98,12 @@ body {
 }
 
 #userInput:focus {
-  border-color: #667eea;
+  border-color: #4CAF50;
 }
 
 .chatbot-input button {
   padding: 12px 20px;
-  background: #667eea;
+  background: #2E7D32;
   color: white;
   border: none;
   border-radius: 25px;
@@ -111,7 +114,7 @@ body {
 }
 
 .chatbot-input button:hover {
-  background: #5a67d8;
+  background: #4CAF50;
 }
 
 .chatbot-input button:active {
